@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 import 'home.dart';
+import 'profile.dart';
 void main() {
-  runApp(const Home());
+  runApp(const Profil());
 }
 
 class MyApp extends StatelessWidget {
