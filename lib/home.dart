@@ -41,7 +41,7 @@ class LaporanSaya extends StatelessWidget {
                   clipBehavior: Clip.antiAlias,
                   child: Column(
                     children: [
-                      Image.asset('sample/jalan.jpg'),
+                      Image.asset('assets/sample/jalan.jpg'),
                       ListTile(
                         title: const Text('Jalan di perbatasan rusak'),
                         subtitle: Text(
@@ -84,9 +84,9 @@ class LaporanSaya extends StatelessWidget {
                   clipBehavior: Clip.antiAlias,
                   child: Column(
                     children: [
-                      Image.asset('sample/sampah.jpg'),
+                      Image.asset('assets/sample/sampah.jpg'),
                       ListTile(
-                        title: const Text('Jalan di perbatasan rusak'),
+                        title: const Text('Sampah berserakan di sekitar lapangan'),
                         subtitle: Text(
                           '12-12-2022',
                           style:
