@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 import 'home.dart';
+import 'realisasi.dart';
 import 'profile.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       home: Pages(),
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.deepPurple,
       ),
     );
   }
@@ -28,11 +29,11 @@ class Pages extends StatefulWidget {
 }
 
 class _PagesState extends State<Pages> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
   static const List<Widget> appbartitle = <Widget>[
     Text('Realisasi'),
     Text('Laporan'),
-    Text('Profil'),
+    Text('Profil Saya'),
   ];
   static const List<Widget> appbaricon = <Widget>[
     Icon(Icons.fact_check_outlined),
@@ -40,7 +41,7 @@ class _PagesState extends State<Pages> {
     Icon(Icons.person_outline),
   ];
   final List<Widget> _children = [
-    Home(),
+    Realisasi(),
     Home(),
     Profil(),
   ];
@@ -56,7 +57,7 @@ class _PagesState extends State<Pages> {
               child: Icon(Icons.search),
             )
           ],
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.deepPurple,
         ),
         body: _children[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
@@ -76,7 +77,7 @@ class _PagesState extends State<Pages> {
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.red,
+          selectedItemColor: Colors.deepPurple,
           onTap: (int index) {
             setState(() {
               _selectedIndex = index;

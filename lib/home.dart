@@ -70,7 +70,7 @@ class Home extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
-                        'Mohon kepada kepala desa untuk segera menindak lanjuti laporan pengaduan ini karena pada lokasi tersebut sering terjadi kecelakaan',
+                        'Mohon kerahkan tim kebersihan untuk menjaga kebersihan lapangan',
                         style: TextStyle(color: Colors.black.withOpacity(0.6)),
                       ),
                     ),
@@ -101,7 +101,7 @@ class Home extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
         mini: true,
         onPressed: () {
