@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'profile.dart';
+import 'pengaduan.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -39,15 +39,15 @@ class Home extends StatelessWidget {
                           onPressed: () {
                             // Respond to button press
                           },
-                          icon: Icon(Icons.edit_outlined, size: 18),
-                          label: Text("Edit"),
+                          icon: const  Icon(Icons.edit_outlined, size: 18),
+                          label: const Text("Edit"),
                         ),
                         TextButton.icon(
                           onPressed: () {
                             // Respond to button press
                           },
-                          icon: Icon(Icons.delete_outline_outlined, size: 18),
-                          label: Text("Hapus"),
+                          icon: const Icon(Icons.delete_outline_outlined, size: 18),
+                          label: const Text("Hapus"),
                         ),
                       ],
                     ),
@@ -81,15 +81,15 @@ class Home extends StatelessWidget {
                           onPressed: () {
                             // Respond to button press
                           },
-                          icon: Icon(Icons.edit_outlined, size: 18),
-                          label: Text("Edit"),
+                          icon: const  Icon(Icons.edit_outlined, size: 18),
+                          label: const  Text("Edit"),
                         ),
                         TextButton.icon(
                           onPressed: () {
                             // Perform some action
                           },
-                          icon: Icon(Icons.delete_outline_outlined, size: 18),
-                          label: Text('Hapus'),
+                          icon: const  Icon(Icons.delete_outline_outlined, size: 18),
+                          label: const  Text('Hapus'),
                         ),
                       ],
                     ),
@@ -105,9 +105,13 @@ class Home extends StatelessWidget {
         foregroundColor: Colors.white,
         mini: true,
         onPressed: () {
-          // Respond to button press
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => const Add_aduan(),
+            ),
+          );
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add_outlined),
       ),
     );
   }
