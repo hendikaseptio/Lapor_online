@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
+import 'opencamera.dart';
 
 class Add_aduan extends StatefulWidget {
   const Add_aduan({super.key});
@@ -119,7 +120,11 @@ class _Add_aduanState extends State<Add_aduan> {
                                   height: 40,
                                   child: OutlinedButton.icon(
                                     onPressed: () {
-                                      // Respond to button press
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (context) => const TakePictureScreen(camera: firstCamera,),
+                                        ),
+                                      );
                                     },
                                     icon: Icon(Icons.photo_camera_outlined,
                                         size: 18),
