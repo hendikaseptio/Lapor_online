@@ -120,11 +120,7 @@ class _Add_aduanState extends State<Add_aduan> {
                                   height: 40,
                                   child: OutlinedButton.icon(
                                     onPressed: () {
-                                      Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                          builder: (context) => const TakePictureScreen(camera: firstCamera,),
-                                        ),
-                                      );
+                                      
                                     },
                                     icon: Icon(Icons.photo_camera_outlined,
                                         size: 18),

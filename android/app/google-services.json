@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "672450494005",
+    "project_id": "lapor-desaku",
+    "storage_bucket": "lapor-desaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672450494005:android:0e8573ee882189bfee7b7c",
+        "android_client_info": {
+          "package_name": "stmikwp.hendika.lapor_desaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672450494005-rk4fef9ijatif2299rnd2ovv7ac03p7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "stmikwp.hendika.lapor_desaku",
+            "certificate_hash": "ba907235ac8ccd457e970855c12c6019cb4a75d4"
+          }
+        },
+        {
+          "client_id": "672450494005-81e4shbkghuiavmh0e927pkclne49plq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUrD_SXb9h087cWOW6WcEXxuYOABh2T5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672450494005-81e4shbkghuiavmh0e927pkclne49plq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
