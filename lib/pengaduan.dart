@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
-import 'opencamera.dart';
+// import 'opencamera.dart';
 
 class Add_aduan extends StatefulWidget {
   const Add_aduan({super.key});

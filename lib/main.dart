@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'login.dart';
 import 'home.dart';
 import 'realisasi.dart';
 import 'profile.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyWidget());
 }
 
@@ -29,6 +33,14 @@ class Pages extends StatefulWidget {
 }
 
 class _PagesState extends State<Pages> {
+  // text fields' controllers
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _priceController = TextEditingController();
+  
+  // firebase
+  final CollectionReference _productss =
+      FirebaseFirestore.instance.collection('products');
+
   int _selectedIndex = 1;
   static const List<Widget> appbartitle = <Widget>[
     Text('Realisasi'),
